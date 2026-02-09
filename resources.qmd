@@ -37,4 +37,92 @@ Suis le lien ci-bas et colles le code **en bas de "Afficher l'image"**
 
 🚀 [Décollage!](https://missions.astro-pi.org/fr/mz/code_submissions/new)
 
+## Animation (optionnel) 
 
+On peut utiliser `sleep(1)` et répéter les instructions pour créer une animation:
+
+```python
+r = (255, 0, 64) 
+v = (12, 207, 61) 
+o = (207, 126, 12)
+
+rvb = sense.color 
+c = (rvb.red, rvb.green, rvb.blue)
+
+image = [
+  c, c, c, c, r, c, c, c,
+  c, c, c, r, r, r, c, c,
+  c, c, r, r, r, r, r, c,
+  c, c, v, r, r, r, o, c,
+  c, c, v, v, r, o, o, c,
+  c, c, v, v, v, o, o, c,
+  c, c, c, v, v, o, c, c,
+  c, c, c, c, v, c, c, c]
+
+sense.set_pixels(image)
+
+sleep(1)
+
+r = (255, 0, 64) 
+v = (12, 207, 61) 
+o = (207, 126, 12)
+
+rvb = sense.color 
+c = (rvb.red, rvb.green, rvb.blue)
+
+image = [
+  c, c, c, c, c, r, c, c,
+  c, c, c, c, r, r, r, c,
+  c, c, c, r, r, r, r, r,
+  c, c, c, v, r, r, r, o,
+  c, c, c, v, v, r, o, o,
+  c, c, c, v, v, v, o, o,
+  c, c, c, c, v, v, o, c,
+  c, c, c, c, c, v, c, c]
+
+sense.set_pixels(image)
+
+sleep(1)
+
+image = [
+  c, c, c, c, r, c, c, c,
+  c, c, c, r, r, r, c, c,
+  c, c, r, r, r, r, r, c,
+  c, c, v, r, r, r, o, c,
+  c, c, v, v, r, o, o, c,
+  c, c, v, v, v, o, o, c,
+  c, c, c, v, v, o, c, c,
+  c, c, c, c, v, c, c, c]
+
+sense.set_pixels(image)
+
+sleep(1)
+
+image = [
+  c, c, c, r, c, c, c, c,
+  c, c, r, r, r, c, c, c,
+  c, r, r, r, r, r, c, c,
+  c, v, r, r, r, o, c, c,
+  c, v, v, r, o, o, c, c,
+  c, v, v, v, o, o, c, c,
+  c, c, v, v, o, c, c, c,
+  c, c, c, v, c, c, c, c]
+
+sense.set_pixels(image)
+
+sleep(1)
+
+image = [
+  c, c, r, c, c, c, c, c,
+  c, r, r, r, c, c, c, c,
+  r, r, r, r, r, c, c, c,
+  v, r, r, r, o, c, c, c,
+  v, v, r, o, o, c, c, c,
+  v, v, v, o, o, c, c, c,
+  c, v, v, o, c, c, c, c,
+  c, c, v, c, c, c, c, c]
+
+sense.set_pixels(image)
+```
+
+Peux-tu faire rouler l'animation en boucle avec `for i in range(0, 10):`?
