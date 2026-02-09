@@ -1,0 +1,40 @@
+---
+title: "Les ours dans l'espace 🐻"
+format: 
+  html:
+    toc: true
+---
+
+**Code de classe**: `hawk-tree`
+
+**Copies ce code** (clique en haut à droite de la zone grise):
+
+```python
+r = (255, 0, 64) 
+v = (12, 207, 61) 
+o = (207, 126, 12)
+
+rvb = sense.color 
+c = (rvb.red, rvb.green, rvb.blue)
+
+image = [
+  c, c, c, c, r, c, c, c,
+  c, c, c, r, r, r, c, c,
+  c, c, r, r, r, r, r, c,
+  c, c, v, r, r, r, o, c,
+  c, c, v, v, r, o, o, c,
+  c, c, v, v, v, o, o, c,
+  c, c, c, v, v, o, c, c,
+  c, c, c, c, v, c, c, c]
+
+sense.set_pixels(image)
+```
+
+Nous allons modifier ce code pour créer de nouvelles images 
+qui vont être affichées dans la station spatiale internationale!
+
+Suis le lien ci-bas et colles le code **en bas de "Afficher l'image"**
+
+🚀 [Décollage!](https://missions.astro-pi.org/fr/mz/code_submissions/new)
+
+
