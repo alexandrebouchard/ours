@@ -126,3 +126,6 @@ sense.set_pixels(image)
 ```
 
 Peux-tu faire rouler l'animation en boucle avec `for i in range(0, 10):`?
+
+
+[Presentation](ours.pdf)
